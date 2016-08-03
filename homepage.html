@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home Automation</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <!-- Custom Styles theme -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script src="./mqttws31.js"></script>
+  <script src="public/javascript/testClient.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="public/stylesheet/style.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0-rc.2/angular-route.min.js"></script>
+</head>
+  
+
+<body onunload="closeAllConnnections()";>
+
+<div class="row col-sm-offset-1 col-md-offset-1 col-lg-offset-1";>
+  <div class="col-sm-5 col-md-5 col-lg-5" >
+		<div class="well well-sm" align="center">
+			<h1 >Light</h1>
+			<img id="myImageBulb" onclick="onBulbClick()" src="public/images/pic_bulboff.gif" width="110" height="160">
+			<p id="lights">Click on bulb  to switch on the bulb </p>
+		</div>  	
+  </div>
+  <div class="col-sm-5 col-md-5 col-lg-5" >
+  		<div class="well well-sm" align="center">
+			<h1 >Window</h1>
+			<img id="myImageWindow" onclick="onWindowClick()" src="public/images/windowClosed.png" width="220" height="160"></br>
+			<p id="window">Click on window to open </p>
+		</div>  	
+  </div>
+  <div class="col-sm-1 col-md-1 col-lg-1" >
+    <canvas id="canvas" width="130" height="130"
+      style="background-color:">
+    </canvas>
+    <img id="motion_detected" src="public/images/batman.gif"  >
+  </div>
+</div>
+
+<div class="row col-sm-offset-1 col-md-offset-1 col-lg-offset-1";>  
+  <div class="col-sm-5 col-md-5 col-lg-5">
+		<div class="well well-sm" align="center">
+			<h1 id="temp">Temperature</h1>
+      <h1 id="humidity">Humidity</h1>			
+      <img id="myTempHumidity" onclick="changeTempHumidity()" src="public/images/cool.jpg" width="110" height="160">
+      <p id="tempHumidity"> </p></br>
+		</div>  	
+  </div>
+  <div class="col-sm-5 col-md-5 col-lg-5">
+  	<div class="well well-sm" align="center">
+			<h1 >Air quality</h1>
+			<h2 id="airQuality"></h2>
+      <img id="myAirQualityImage" onclick="changeImage()" src="public/images/nothing.jpg" width="120" height="160">
+		</div>  	
+  </div>
+  <div class="col-sm-1 col-md-2 col-lg-2" >
+    </br></br>
+      <img id="plant" src="public/images/plant-7.gif" width="150" height="200" >
+  </div>
+  
+</div>
+
+</body>
+<script src="public/javascript/clock.js"></script>
+</html>

@@ -1,0 +1,36 @@
+List of topics
+
+#declaring variables for topics
+rootTopic= r"SJSU_EE297b/#"
+
+publishTopic = { "getSmartLight": r"SJSU_EE297b/smartLight/get",
+                  "getAirQuality": r"SJSU_EE297b/airQuality/get",
+                  "getSmartWindow": r"SJSU_EE297b/smartWindow/get",
+                  "getTemperature": r"SJSU_EE297b/temperature/get",
+                  "getTemperatureAlert": r"SJSU_EE297b/temperature/alert",
+                   "getHumidity":  r"SJSU_EE297b/humidity/get",
+                   "setSmartWindow": r"SJSU_EE297b/smartWindow/set",
+                   "setSmartLight": r"SJSU_EE297b/smartLight/set",
+                   "getMotionDetector": r"SJSU_EE297b/motionDetector/get",
+                   "getLightDetector": r"SJSU_EE297b/lightDetector/get"                                
+                  }
+
+subscribeTopic = { "getSmartLight": r"SJSU_EE297b/smartLight/get",
+                   "getTemperature": r"SJSU_EE297b/temperature/get",
+                   "getTemperatureAlert": r"SJSU_EE297b/temperature/alert",
+                   "getHumidity":  r"SJSU_EE297b/humidity/get",
+                   "getAirQuality": r"SJSU_EE297b/smartAirQuality/get",
+                   "getSmartWindow": r"SJSU_EE297b/smartWindow/get",
+                   "setSmartWindow": r"SJSU_EE297b/smartWindow/set",
+                   "setSmartLight": r"SJSU_EE297b/smartLight/set",
+                   "getMotionDetector": r"SJSU_EE297b/motionDetector/get",
+                   "getLightDetector": r"SJSU_EE297b/lightDetector/get"
+                  }
+
+
+                  var publishTopic = {lights:"/webIOTLights" , window:"/webIOTWindow"};
+var subscribeTopic = {lights:"/deviceIOTLights" , 
+                      window:"/deviceIOTWindow" ,
+                      tempHumidity:"/deviceIOTTempHumidity" ,
+                      AirQuality:"/deviceIOTAirQuality" ,
+                    };

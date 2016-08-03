@@ -1,0 +1,26 @@
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: url('../images/body-day.jpg');
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.well{
+    min-height: 300px;
+    max-height: 300px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+h1{
+    color: #cc3300;
+    padding-bottom: 0px;
+}
+h2{
+    color: #cc3300;
+}
+p{
+    color: #1a8cff;
+    font-size:150%;
+}
